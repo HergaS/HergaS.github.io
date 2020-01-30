@@ -1,17 +1,40 @@
 <template>
-  <b-row class="my-5 mx-auto">
-    <b-col md="6" class="mb-3" ><a href="https://hergas.github.io/RGB-Game/"><img src="../assets/rgbGame.png" alt=""></a></b-col>
-    <b-col md="6" class="mb-3"><a href="https://hergas.github.io/form/"><img src="../assets/formSite.png" alt=""></a></b-col>
+  <b-row class="image-container my-5 mx-auto">
+    <b-col
+      class="mb-3 mx-auto"
+      cols="12"
+      md="6"
+      lg="4"
+      v-for='project in projects' :key='project.id'
+    >
+      <b-link :href="project.link" target="_blank">
+        <b-img
+          class="images"
+          :src="require(`@/assets/${project.image}`)"
+          alt=""
+          fluid
+          rounded=""
+        ></b-img>
+      </b-link>
+    </b-col>
   </b-row>
 </template>
 
 <script>
 export default {
+  computed: {
+    projects () {
+      return this.$store.getters.projects
+    }
+  }
 }
 </script>
 
 <style scoped>
-    img{
+    .images{
         max-width: 100%;
+    }
+    .image-container{
+      border: 1px solid blue;
     }
 </style>
