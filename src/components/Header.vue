@@ -16,7 +16,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .hello{
-    margin-top: 30%;
-    border: 1px solid green;
+    margin-top: 20%;
+  }
+  #title{
+    font-size: 4rem;
+    color: #8fd96a;
   }
 </style>

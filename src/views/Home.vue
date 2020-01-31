@@ -1,5 +1,6 @@
 <template>
   <b-container fluid="sm" class="home">
+    <Icons />
     <Header msg="Sašo Herga"/>
     <Description />
     <Projects />
@@ -11,13 +12,15 @@
 import Header from '@/components/Header.vue'
 import Description from '@/components/Description.vue'
 import Projects from '@/components/Projects.vue'
+import Icons from '@/components/Icons.vue'
 
 export default {
   name: 'home',
   components: {
     Header,
     Description,
-    Projects
+    Projects,
+    Icons
   }
 }
 </script>

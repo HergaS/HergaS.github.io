@@ -1,7 +1,7 @@
 <template>
   <b-row class="image-container my-5 mx-auto">
     <b-col
-      class="mb-3 mx-auto"
+      class="my-3 mx-auto"
       cols="12"
       md="6"
       lg="4"
@@ -10,7 +10,7 @@
       <b-link :href="project.link" target="_blank">
         <b-img
           class="images"
-          :src="require(`@/assets/${project.image}`)"
+          :src="require(`@/assets/projectsImg/${project.image}`)"
           alt=""
           fluid
           rounded=""
@@ -35,6 +35,18 @@ export default {
         max-width: 100%;
     }
     .image-container{
-      border: 1px solid blue;
+      position: relative;
+    }
+    .image-container::after{
+      background-color: #3d3d3d;
+      content : "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity : 0.4;
+      z-index: -1;
     }
 </style>

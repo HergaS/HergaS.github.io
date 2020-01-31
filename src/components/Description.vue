@@ -13,6 +13,6 @@ export default {
 
 <style scoped>
     .description{
-       border: 1px solid red;
+       color: #6b6e70;
     }
 </style>
