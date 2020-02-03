@@ -19,18 +19,23 @@ body{
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  font-family: 'Quicksand', sans-serif;
+  height: 100vh;
 }
-
-#nav {
-  padding: 30px;
+@media only screen and (max-width: 800px) {
+  body {
+    height: auto;
+    background-repeat: repeat-y;
+  }
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.fade-appear-class{
+  opacity: 0;
 }
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.fade-appear-to-class{
+  opacity: 1;
+}
+.fade-appear-active-class{
+  transition: all 1.5s ease-in-out;
+  transition-delay: 1.8s;
 }
 </style>

@@ -1,9 +1,9 @@
 <template>
-  <b-container fluid="sm" class="home">
+  <b-container fluid="" class="home">
     <Icons />
     <Header msg="Sašo Herga"/>
     <Description />
-    <Projects />
+    <Projects align-v="end" />
   </b-container>
 </template>
 
@@ -27,6 +27,6 @@ export default {
 
 <style scoped>
   .home{
-    vertical-align: middle;
+    height: 100vh;
   }
 </style>

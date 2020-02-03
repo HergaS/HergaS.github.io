@@ -1,6 +1,14 @@
 <template>
-  <b-row class="hello">
-    <h1 id="title" class="mx-auto my-5">{{ msg }}</h1>
+  <b-row id="hello">
+    <h1 id="name" class="mx-auto my-2">{{ msg }}</h1>
+    <transition
+      appear
+      appear-class="fade-appear-class"
+      appear-to-class="fade-appear-to-class"
+      appear-active-class="fade-appear-active-class"
+    >
+      <b-col cols="12" id="title">Junior Web Developer</b-col>
+    </transition>
   </b-row>
 </template>
 
@@ -9,17 +17,40 @@ export default {
   name: 'Header',
   props: {
     msg: String
+  },
+  data () {
+    return {
+      name: document.getElementById('name')
+    }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .hello{
-    margin-top: 20%;
+  #hello{
+    margin-top: 5%;
+  }
+  #name{
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 500;
+    animation: nameAnimate 1.5s ease-in-out;
   }
   #title{
-    font-size: 4rem;
-    color: #8fd96a;
+    color: #62c232;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  @keyframes nameAnimate {
+    0% {
+      font-size: 0;
+    }
+    50% {
+      font-size: 7rem;
+    }
+    100% {
+      font-size: 4.5rem;
+    }
   }
 </style>

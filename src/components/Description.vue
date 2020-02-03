@@ -1,9 +1,16 @@
 <template>
-  <b-row class="my-5 mx-auto">
-    <b-col md="6" class="description mx-auto">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi iusto esse sit, autem labore vel hic dolores ad iste! Doloremque labore sit quod in doloribus dolore, ea blanditiis explicabo accusamus necessitatibus ratione, veniam consequuntur deleniti officiis similique, quis aut facere?
-    </b-col>
-  </b-row>
+  <transition
+      appear
+      appear-class="fade-appear-class"
+      appear-to-class="fade-appear-to-class"
+      appear-active-class="fade-appear-active-class"
+    >
+      <b-row class="my-5 mx-auto">
+        <b-col md="6" class="description mx-auto">
+            Front-end web developer wanting to fortify and expand my knowladge. Currently using HTML, CSS, JavaScript, Vue.js,jQuery and Bootstrap.
+        </b-col>
+      </b-row>
+    </transition>
 </template>
 
 <script>
@@ -13,6 +20,8 @@ export default {
 
 <style scoped>
     .description{
-       color: #6b6e70;
+       color: #adadad;
+       font-weight: 300;
+       font-size: 1.1rem;
     }
 </style>
