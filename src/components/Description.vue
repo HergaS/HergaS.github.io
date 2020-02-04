@@ -7,7 +7,7 @@
     >
       <b-row class="my-5 mx-auto">
         <b-col md="6" class="description mx-auto">
-            Front-end web developer wanting to fortify and expand my knowladge. Currently using HTML, CSS, JavaScript, Vue.js,jQuery and Bootstrap.
+            Front-end web developer wanting to fortify and expand my knowladge. Currently using HTML, CSS, JavaScript, Vue.js and Bootstrap.
         </b-col>
       </b-row>
     </transition>
