@@ -23,6 +23,7 @@ export default {
     Icons
   },
   mounted () {
+    /*eslint disable*/
     console.log('works')
   }
 }
