@@ -21,6 +21,9 @@ export default {
     Description,
     Projects,
     Icons
+  },
+  mounted () {
+    console.log('works')
   }
 }
 </script>
