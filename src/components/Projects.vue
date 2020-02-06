@@ -43,6 +43,9 @@ export default {
       return this.$store.getters.projects
     }
   },
+  mounted() {
+    console.log('jeeeej ci')
+  },
   methods: {
     scrollTo () {
       const el = this.$el.getElementsByClassName('images')[0]
