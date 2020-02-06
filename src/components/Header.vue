@@ -1,7 +1,7 @@
 <template>
   <b-row id="hello">
     <h1 id="name" class="mx-auto my-2">{{ msg }}</h1>
-    <b-col cols="12" id="title">Junior Web Developer</b-col>
+    <b-col cols="12" id="title">Web Developer</b-col>
   </b-row>
 </template>
 
@@ -34,17 +34,21 @@ export default {
     font-size: 1.8rem;
     font-weight: 500;
     animation: titleAnimate 0.5s ease-in-out;
+    -webkit-animation: titleAnimate 0.5s ease-in-out;
     animation-fill-mode: both;
     animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
   }
   @media only screen and (min-width: 800px){
     #name{
+      -webkit-animation: nameAnimate 1.5s ease-in-out;
       animation: nameAnimate 1.5s ease-in-out;
     }
   }
   @media only screen and (max-width: 800px){
     #name{
       animation: nameAnimateMobile 1.5s ease-in-out;
+      -webkit-animation: nameAnimateMobile 1.5s ease-in-out;
     }
   }
   @keyframes nameAnimate {
