@@ -21,10 +21,6 @@ export default {
     Description,
     Projects,
     Icons
-  },
-  mounted () {
-    /*eslint disable*/
-    console.log('works')
   }
 }
 </script>
