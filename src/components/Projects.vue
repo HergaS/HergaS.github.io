@@ -13,7 +13,7 @@
           xl="8"
         >
           <b-row>
-            <b-col cols="12" id="proj" @click="scrollTo">Projects</b-col>
+            <b-col cols="12" id="proj" @click="scrollTo">My Projects</b-col>
             <b-col
               class="my-3 mx-auto"
               cols="12"
@@ -50,9 +50,6 @@ export default {
         el.scrollIntoView()
       }
     }
-  },
-  created () {
-    console.log('Deployed')
   }
 }
 </script>
