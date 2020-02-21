@@ -62,6 +62,17 @@ export default {
       font-size: 4.5rem;
     }
   }
+  @-webkit-keyframes nameAnimate {
+    0% {
+      -webkit-font-size: 0;
+    }
+    50% {
+      -webkit-font-size: 8rem;
+    }
+    100% {
+      -webkit-font-size: 4.5rem;
+    }
+  }
   @keyframes nameAnimateMobile {
     0% {
       font-size: 4.5rem;
@@ -73,12 +84,31 @@ export default {
       font-size: 4.5rem;
     }
   }
+  @-webkit-keyframes nameAnimateMobile {
+    0% {
+      -webkit-font-size: 4.5rem;
+    }
+    50% {
+      -webkit-font-size: 8rem;
+    }
+    100% {
+      -webkit-font-size: 4.5rem;
+    }
+  }
   @keyframes titleAnimate {
     0% {
       font-size: 0;
     }
     100% {
       font-size: 1.8rem;
+    }
+  }
+  @-webkit-keyframes titleAnimate {
+    0% {
+      -webkit-font-size: 0;
+    }
+    100% {
+      -webkit-font-size: 1.8rem;
     }
   }
 </style>
