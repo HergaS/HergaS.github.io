@@ -8,8 +8,8 @@ export default new Vuex.Store({
     projects: [
       {
         id: 1,
-        image: 'teskoGallery.png',
-        link: 'https://tesko-gallery.firebaseapp.com/'
+        image: 'sads.png',
+        link: 'https://sads-doo.herokuapp.com/'
       },
       {
         id: 2,
