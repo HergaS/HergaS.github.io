@@ -18,8 +18,8 @@ export default new Vuex.Store({
       },
       {
         id: 3,
-        image: 'formSite.png',
-        link: 'https://hergas.github.io/form/'
+        image: 'quotes.png',
+        link: 'https://hergas.github.io/quotes/'
       }
     ]
   },
