@@ -9,7 +9,7 @@ export default new Vuex.Store({
       {
         id: 1,
         image: 'sads.png',
-        link: 'https://sads-doo.herokuapp.com/'
+        link: 'https://sads.si/'
       },
       {
         id: 2,

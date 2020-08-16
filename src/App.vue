@@ -8,7 +8,7 @@
 body{
   background-image: url("~@/assets/laptop-background.jpg");
   background-color: #3d3d3d;
-  height: 100vh;
+  height: 90vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
